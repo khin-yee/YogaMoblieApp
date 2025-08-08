@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseEntryActivity">
+    <TextView
+        android:text="Course Registration"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"/>
+    <Spinner
+        android:id="@+id/SpnDayOfWeek"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <TextView
+
+       android:id="@+id/txttime"
+       android:textSize="15sp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginVertical="20dp"
+       android:text="Click here to pick one time of Class.."
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:hint="Capcity.." />
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:hint="Duration(minutes).." />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:hint="Price $.." />
+
+    <TextView
+        android:text="Type Of Class"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/radioGpType"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdoFlow"
+            android:text="Flow Yoga"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rdoAerial"
+            android:text = "Aerial Yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rdoFamily"
+            android:text="Family Yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editDesc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:hint="Your Description"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnCourseSave"
+        android:text="Save"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
