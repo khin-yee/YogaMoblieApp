@@ -2,6 +2,7 @@ package com.example.yogaapplication
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -95,6 +96,12 @@ class CourseEntryActivity : AppCompatActivity() {
                 }
             description = binding.editDesc.text.toString()
             Toast.makeText(this,"$selectedDay,$description,$typeOfClass",Toast.LENGTH_LONG).show()
+        }
+
+        binding.btnCancel.setOnClickListener{
+            intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
